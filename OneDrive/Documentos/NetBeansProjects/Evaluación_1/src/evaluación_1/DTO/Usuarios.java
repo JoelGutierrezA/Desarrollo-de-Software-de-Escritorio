@@ -81,7 +81,11 @@ public class Usuarios {
     }
 
     public void setTelefono(int Telefono) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(Telefono);
+        if(sb.length() > 8){
             this.Telefono = Telefono;
+        }     
     }
     
     public String getNombreUsuario() {
@@ -114,10 +118,7 @@ public class Usuarios {
 
     public void setContrasena(String Contrasena) {
         if (PASSWORD_PATTERN.matcher(Contrasena).matches()) {
-            System.out.print("La contrasena: " + Contrasena + " es valida");
-        }
-        else {
-            System.out.print("La contrasena: " + Contrasena + " no es valida");
+            this.Contrasena = Contrasena;
         }
     }
       

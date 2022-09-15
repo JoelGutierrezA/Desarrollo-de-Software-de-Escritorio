@@ -4,7 +4,6 @@ import evaluación_1.DTO.Clubes;
 import evaluación_1.DTO.Suscripcion;
 import evaluación_1.DTO.Usuarios;
 import java.util.Date;
-import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,16 +12,17 @@ public class Main {
         System.out.println("Creando Usuario...");
         Usuarios David = new Usuarios();
         David.setIde(1000);
-        David.setNombreCompleto ("David Cogiolle");
+        David.setNombreCompleto("David Cogiolle");
         David.setRun(18085471, '1');
         David.setFechaNacimiento(new Date());
-        David.setTelefono (569664337);
+        David.setTelefono(569664337);
         David.setNombreUsuario("dcog");
         David.setEmail("david.cogiolle@gmail.com");
         David.setContrasena("Afds22231");
         
-        System.out.println(David.getContrasena());
-        System.out.println("Usuarios creado: "+ David.getNombreCompleto()); 
+        System.out.println("Usuarios creado: "+ David.getNombreCompleto());
+        System.out.println("Telefono: +56"+ David.getTelefono());
+        System.out.println("Contrasena Valida: "+ David.getContrasena());
         System.out.println("-------------------------");
         
         System.out.println("Creando Usuario...");
@@ -31,13 +31,14 @@ public class Main {
         Gerr.setNombreCompleto ("Gerr Adere");
         Gerr.setRun(15446388, '5');
         Gerr.setFechaNacimiento(new Date());
-        Gerr.setTelefono (569665823);
+        Gerr.setTelefono (966543379);
         Gerr.setNombreUsuario("ggft");
         Gerr.setEmail("gerr.adere@live.cl");
         Gerr.setContrasena("G1ovanniGg34");
         
-        System.out.println(Gerr.getContrasena());
         System.out.println("Usuarios creado: "+ Gerr.getNombreCompleto());
+        System.out.println("Telefono: +56"+ Gerr.getTelefono());
+        System.out.println("Contrasena Valida: "+ Gerr.getContrasena());
         System.out.println("-------------------------");
         
         System.out.println("Creando Usuario...");
@@ -46,7 +47,7 @@ public class Main {
         Sergio.setNombreCompleto ("Sergio Villanueva");
         Sergio.setRun(19357165, 'k');
         Sergio.setFechaNacimiento(new Date());
-        Sergio.setTelefono (569730023);
+        Sergio.setTelefono (9730023);
         Sergio.setNombreUsuario("scodiio");
         Sergio.setEmail("sergio.villanueva@gmail.com");
         Sergio.setContrasena("5534Gato33");
