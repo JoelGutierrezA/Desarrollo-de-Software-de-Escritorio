@@ -1,13 +1,25 @@
 package evaluación_1.DTO;
 
+import java.util.Date;
+
 public class Usuarios {
     private int Ide;
+    private String NombreCompleto;
+    private int Run;
+    private String Dv;
+    private Date FechaNacimiento;
+    private int Telefono;
     private String NombreUsuario;
     private String Email;
     private String Contrasena;
     
     public Usuarios(){
         this.Ide = 0;
+        this.NombreCompleto = "";
+        this.Run = 0;
+        this.Dv = "";
+        this.FechaNacimiento = new Date();
+        this.Telefono = 0;
         this.NombreUsuario = "";
         this.Email = "";
         this.Contrasena = "";
@@ -21,7 +33,47 @@ public class Usuarios {
         this.Ide = Ide;
     }
 
-    public String getNombreUsuario() {
+    public String getNombreCompleto() {
+        return NombreCompleto;
+    }
+
+    public void setNombreCompleto(String NombreCompleto) {
+        this.NombreCompleto = NombreCompleto;
+    }
+
+    public int getRun() {
+        return Run;
+    }
+
+    public void setRun(int Run) {
+        this.Run = Run;
+    }
+
+    public String getDv() {
+        return Dv;
+    }
+
+    public void setDv(String Dv) {
+        this.Dv = Dv;
+    }
+
+    public Date getFechaNacimiento() {
+        return FechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date FechaNacimiento) {
+        this.FechaNacimiento = FechaNacimiento;
+    }
+
+    public int getTelefono() {
+        return Telefono;
+    }
+
+    public void setTelefono(int Telefono) {
+        this.Telefono = Telefono;
+    }
+    
+        public String getNombreUsuario() {
         return NombreUsuario;
     }
 

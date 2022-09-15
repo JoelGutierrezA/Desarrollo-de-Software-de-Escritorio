@@ -3,6 +3,7 @@ package evaluación_1;
 import evaluación_1.DTO.Clubes;
 import evaluación_1.DTO.Suscripcion;
 import evaluación_1.DTO.Usuarios;
+import java.util.Date;
 
 public class Main {
 
@@ -12,6 +13,11 @@ public class Main {
         System.out.println("Creando Usuario...");
         Usuarios David = new Usuarios();
         David.setIde(1000);
+        David.setNombreCompleto ("David Cogiolle");
+        David.setRun(18085471);
+        David.setDv ("1");
+        David.setFechaNacimiento(new Date());
+        David.setTelefono (569664337);
         David.setNombreUsuario("dcog");
         David.setEmail("david.cogiolle@gmail.com");
         David.setContrasena("Afds22231");
@@ -22,6 +28,11 @@ public class Main {
         System.out.println("Creando Usuario...");
         Usuarios Gerr = new Usuarios();
         Gerr.setIde(1001);
+        Gerr.setNombreCompleto ("Gerr Adere");
+        Gerr.setRun(15446388);
+        Gerr.setDv ("k");
+        Gerr.setFechaNacimiento(new Date());
+        Gerr.setTelefono (569665823);
         Gerr.setNombreUsuario("ggft");
         Gerr.setEmail("gerr.adere@live.cl");
         Gerr.setContrasena("G1ovanniGg34");
@@ -32,6 +43,11 @@ public class Main {
         System.out.println("Creando Usuario...");
         Usuarios Sergio = new Usuarios();
         Sergio.setIde(1002);
+        Sergio.setNombreCompleto ("Sergio Villanueva");
+        Sergio.setRun(19357165);
+        Sergio.setDv ("2");
+        Sergio.setFechaNacimiento(new Date());
+        Sergio.setTelefono (569730023);
         Sergio.setNombreUsuario("scodiio");
         Sergio.setEmail("sergio.villanueva@gmail.com");
         Sergio.setContrasena("5534Gato33");
