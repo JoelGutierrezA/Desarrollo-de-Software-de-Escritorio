@@ -25,7 +25,9 @@ public class Suscripcion {
     }
 
     public void setNumero(int Numero) {
-        this.Numero = Numero;
+        if(Numero > 0){
+            this.Numero = Numero;
+        }
     }
 
     public Usuarios getUsuarios() {
