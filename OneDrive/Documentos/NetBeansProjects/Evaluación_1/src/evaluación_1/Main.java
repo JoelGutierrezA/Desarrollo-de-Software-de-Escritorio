@@ -6,7 +6,6 @@ import evaluación_1.DTO.Usuarios;
 import java.util.Date;
 
 public class Main {
-
     public static void main(String[] args) {
         int Folio = 1000;
         
@@ -14,45 +13,42 @@ public class Main {
         Usuarios David = new Usuarios();
         David.setIde(1000);
         David.setNombreCompleto ("David Cogiolle");
-        David.setRun(18085471);
-        David.setDv ("1");
+        David.setRun(18085471, '1');
         David.setFechaNacimiento(new Date());
         David.setTelefono (569664337);
         David.setNombreUsuario("dcog");
         David.setEmail("david.cogiolle@gmail.com");
         David.setContrasena("Afds22231");
         
-        System.out.println("Usuarios creado: "+ David.getNombreUsuario()); 
+        System.out.println("Usuarios creado: "+ David.getNombreCompleto()); 
         System.out.println("-------------------------");
         
         System.out.println("Creando Usuario...");
         Usuarios Gerr = new Usuarios();
         Gerr.setIde(1001);
         Gerr.setNombreCompleto ("Gerr Adere");
-        Gerr.setRun(15446388);
-        Gerr.setDv ("k");
+        Gerr.setRun(15446388, '5');
         Gerr.setFechaNacimiento(new Date());
         Gerr.setTelefono (569665823);
         Gerr.setNombreUsuario("ggft");
         Gerr.setEmail("gerr.adere@live.cl");
         Gerr.setContrasena("G1ovanniGg34");
         
-        System.out.println("Usuarios creado: "+ Gerr.getNombreUsuario());
+        System.out.println("Usuarios creado: "+ Gerr.getNombreCompleto());
         System.out.println("-------------------------");
         
         System.out.println("Creando Usuario...");
         Usuarios Sergio = new Usuarios();
         Sergio.setIde(1002);
         Sergio.setNombreCompleto ("Sergio Villanueva");
-        Sergio.setRun(19357165);
-        Sergio.setDv ("2");
+        Sergio.setRun(19357165, 'k');
         Sergio.setFechaNacimiento(new Date());
         Sergio.setTelefono (569730023);
         Sergio.setNombreUsuario("scodiio");
         Sergio.setEmail("sergio.villanueva@gmail.com");
         Sergio.setContrasena("5534Gato33");
-        
-        System.out.println("Usuarios creado: "+ Sergio.getNombreUsuario());
+                
+        System.out.println("Usuarios creado: "+ Sergio.getNombreCompleto());
         System.out.println("-------------------------");
         
         System.out.println("Creando Club...");
