@@ -95,9 +95,15 @@ public class Main {
         System.out.println("Creando Suscripcion...");
         Suscripcion Usuario1 = new Suscripcion();
         Usuario1.setNumero(Folio + 10);
-        Usuario1.setAbonoTotal(25150);
-        Usuario1.setEquipos("ARH11 $10.050, MCH12 $15.100");
-        System.out.println("Folio Numero: " + Usuario1.getNumero());
+        Usuario1.setAbonoTotal(10050);
+        Usuario1.setFechaSuscripcion("15/08/2019");
+        Usuario1.setUsuarios(David);
+        Usuario1.setValorSuscripcion(10050);
+        System.out.println("Numero de Suscripcion: "+ Usuario1.getNumero());
+        System.out.println("Abono Total: "+ Usuario1.getAbonoTotal() );
+        System.out.println("Fecha Suscripcion: "+ Usuario1.getFechaSuscripcion());
+        System.out.println("Suscriptor: "+ Usuario1.getUsuarios());
+        System.out.println("Valor Suscripcion: "+ Usuario1.getValorSuscripcion());
         System.out.println("-------------------------");
         
         System.out.println("Creando Suscripcion...");
