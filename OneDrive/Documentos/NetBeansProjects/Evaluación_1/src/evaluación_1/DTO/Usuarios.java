@@ -1,6 +1,7 @@
 package evaluación_1.DTO;
 
 import java.util.Date;
+import java.util.regex.Pattern;
 
 public class Usuarios {
     private int Ide;
@@ -104,16 +105,22 @@ public class Usuarios {
         }
     }
 
+    private static final String PASSWORD_REGEX = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}$";
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile(PASSWORD_REGEX);
+    
     public String getContrasena() {
         return Contrasena;
     }
 
     public void setContrasena(String Contrasena) {
-        if(Contrasena.length() > 6){
-            this.Contrasena = Contrasena;
-        }    
+        if (PASSWORD_PATTERN.matcher(Contrasena).matches()) {
+            System.out.print("La contrasena: " + Contrasena + " es valida");
+        }
+        else {
+            System.out.print("La contrasena: " + Contrasena + " no es valida");
+        }
     }
-    
+      
     public boolean validarRut(int rut, char dv) {
         boolean validacion = false;
         try {

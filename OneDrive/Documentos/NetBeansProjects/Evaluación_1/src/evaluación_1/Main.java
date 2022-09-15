@@ -4,6 +4,7 @@ import evaluación_1.DTO.Clubes;
 import evaluación_1.DTO.Suscripcion;
 import evaluación_1.DTO.Usuarios;
 import java.util.Date;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class Main {
         David.setEmail("david.cogiolle@gmail.com");
         David.setContrasena("Afds22231");
         
+        System.out.println(David.getContrasena());
         System.out.println("Usuarios creado: "+ David.getNombreCompleto()); 
         System.out.println("-------------------------");
         
@@ -34,6 +36,7 @@ public class Main {
         Gerr.setEmail("gerr.adere@live.cl");
         Gerr.setContrasena("G1ovanniGg34");
         
+        System.out.println(Gerr.getContrasena());
         System.out.println("Usuarios creado: "+ Gerr.getNombreCompleto());
         System.out.println("-------------------------");
         
@@ -47,7 +50,8 @@ public class Main {
         Sergio.setNombreUsuario("scodiio");
         Sergio.setEmail("sergio.villanueva@gmail.com");
         Sergio.setContrasena("5534Gato33");
-                
+        
+        System.out.println(Sergio.getContrasena());        
         System.out.println("Usuarios creado: "+ Sergio.getNombreCompleto());
         System.out.println("-------------------------");
         
