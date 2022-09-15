@@ -24,6 +24,17 @@ public class Usuarios {
         this.Email = "";
         this.Contrasena = "";
     }
+    
+    public Usuarios(int Ide, String NombreCompleto,int Run, String Dv, Date FechaNacimiento, int Telefono, String Email, String Contrasena) {
+        this.Ide = Ide;
+        this.NombreCompleto = NombreCompleto;
+        this.Run = Run;
+        this.Dv = Dv;
+        this.FechaNacimiento = FechaNacimiento;
+        this.Telefono = Telefono;
+        this.Email = Email;
+        this.Contrasena = Contrasena;
+    }
 
     public int getIde() {
         return Ide;

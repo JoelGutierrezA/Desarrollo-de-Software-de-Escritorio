@@ -12,7 +12,14 @@ public class Suscripcion {
         this.AbonoTotal = 0;
         this.Equipos = "";
     }
-
+    
+    public Suscripcion(int Numero, Usuarios Usuarios, int AbonoTotal, String Equipos){
+        this.Numero = Numero;
+        this.Usuarios = Usuarios;
+        this.AbonoTotal =  AbonoTotal;
+        this.Equipos = Equipos;
+    }
+    
     public int getNumero() {
         return Numero;
     }
