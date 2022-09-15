@@ -1,6 +1,5 @@
 package evaluación_1.DTO;
 
-import java.util.Date;
 import java.util.regex.Pattern;
 
 public class Usuarios {
@@ -8,7 +7,7 @@ public class Usuarios {
     private String NombreCompleto;
     private int Run;
     private String Dv;
-    private Date FechaNacimiento;
+    private String FechaNacimiento;
     private int Telefono;
     private String NombreUsuario;
     private String Email;
@@ -19,14 +18,14 @@ public class Usuarios {
         this.NombreCompleto = "";
         this.Run = 0;
         this.Dv = "";
-        this.FechaNacimiento = new Date();
+        this.FechaNacimiento = "";
         this.Telefono = 0;
         this.NombreUsuario = "";
         this.Email = "";
         this.Contrasena = "";
     }
     
-    public Usuarios(int Ide, String NombreCompleto,int Run, String Dv, Date FechaNacimiento, int Telefono, String Email, String Contrasena) {
+    public Usuarios(int Ide, String NombreCompleto,int Run, String Dv, String FechaNacimiento, int Telefono, String Email, String Contrasena) {
         this.Ide = Ide;
         this.NombreCompleto = NombreCompleto;
         this.Run = Run;
@@ -68,11 +67,11 @@ public class Usuarios {
         return Dv;
     }
    
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return FechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date FechaNacimiento) {
+    public void setFechaNacimiento(String FechaNacimiento) {
         this.FechaNacimiento = FechaNacimiento;
     }
 

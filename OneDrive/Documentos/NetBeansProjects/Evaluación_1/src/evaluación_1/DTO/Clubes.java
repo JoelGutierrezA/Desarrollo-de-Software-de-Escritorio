@@ -2,19 +2,36 @@ package evaluación_1.DTO;
 
 public class Clubes {
     private String Codigo;
-    private String Nombre;
+    private String NombreClub;
+    private String NombreFundador;
+    private int AnoFundacion;
+    private String PaisOrigen;
     private String Lema;
     private int ValorSuscripcion;
     private String Colores;
     
     public Clubes(){
         this.Codigo = "";
-        this.Nombre = "";
+        this.NombreClub = "";
+        this.NombreFundador = "";
+        this.AnoFundacion = 0;
+        this.PaisOrigen = "";
         this.Lema = "";
         this.ValorSuscripcion = 0;
         this.Colores = "";
     }
 
+    public Clubes(String Codigo, String NombreClub, String NombreFundador, int AnoFundacion, String PaisOrigen, String Lema, int ValorSuscripcion, String Colores){
+        this.Codigo = Codigo;
+        this.NombreClub = NombreClub;
+        this.NombreFundador = NombreFundador;
+        this.AnoFundacion = AnoFundacion;
+        this.PaisOrigen = PaisOrigen;
+        this.Lema = Lema;
+        this.ValorSuscripcion = ValorSuscripcion;
+        this.Colores = Colores;
+    }
+    
     public String getCodigo() {
         return Codigo;
     }
@@ -23,14 +40,38 @@ public class Clubes {
         this.Codigo = Codigo;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getNombreClub() {
+        return NombreClub;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombreClub(String NombreClub) {
+        this.NombreClub = NombreClub;
     }
 
+    public String getNombreFundador() {
+        return NombreFundador;
+    }
+
+    public void setNombreFundador(String NombreFundador) {
+        this.NombreFundador = NombreFundador;
+    }
+
+    public int getAnoFundacion() {
+        return AnoFundacion;
+    }
+
+    public void setAnoFundacion(int AnoFundacion) {
+        this.AnoFundacion = AnoFundacion;
+    }
+
+    public String getPaisOrigen() {
+        return PaisOrigen;
+    }
+
+    public void setPaisOrigen(String PaisOrigen) {
+        this.PaisOrigen = PaisOrigen;
+    }
+    
     public String getLema() {
         return Lema;
     }
