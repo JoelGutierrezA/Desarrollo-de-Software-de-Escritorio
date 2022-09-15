@@ -70,10 +70,10 @@ public class Usuarios {
     }
 
     public void setTelefono(int Telefono) {
-        this.Telefono = Telefono;
+            this.Telefono = Telefono;
     }
     
-        public String getNombreUsuario() {
+    public String getNombreUsuario() {
         return NombreUsuario;
     }
 
